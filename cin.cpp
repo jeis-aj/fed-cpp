@@ -1,34 +1,50 @@
 // C++ program to illustrate the take
 // multiple input
 #include <iostream>
+#include <vector>
 using namespace std;
 
 // Driver Code
 int main()
 {
-	char name[50];
-	int num[50];
-	int age;
+	vector <int> l;
+	vector <vector <int>> result;
+	l ={ 1,3,35,55  };  // array they're giving
+	int i;
+	for (int z: l){
+		i =z;
 
-	// Take multiple input using cin
-	int i=0;
-	/* cout<<"endl"<<'\n'; */
-	/* cout<<"endl"<<'\n'; */
+		if ( i == j ){
+			continue;
+		}
+		else{
+			int k;
+			for (int y :l){
+				k =y;
 
-	while(i<5){
-	cin.ignore(9,' ');
-	cin >> name ;
-	/* if (name[i] == '\n'){ */
-	/* cout<<endl<<name<<"endl"<<endl; */
-	/* i++; */
-	/* } */
-	}
-	/* cout <<name<endl; */
-	// Print output
-	cout <<endl<< "Name : " << name << endl;
-	/* cout << "Age : " << age << endl; */
+				if (k ==j || i ==k){
+					continue;}
+				else{
+					int j;
 
-	return 0;
-}
+					for (int x: l){
+						j=x;
+					}
+					else {
+						int sum;
+						sum = i + j +k ;
+						if(!sum){
+							vector <int> sub;
+							sub.push_back(i);
+							sub.push_back(j);
+							sub.push_back(k);
+							result.push_back(sub);
+						}
 
+					}
+				}
+
+			}
+
+		}
 
