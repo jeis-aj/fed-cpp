@@ -29,12 +29,12 @@ int lcm(int num1,int num2){
 }
 int gcd(int num1,int num2)
 {
-	cout<<"called gcd"<<endl;
-	cout<<"n1: "<<num1<<'\t'<<"n2: "<<num2<<endl;
-	cout<<"check wheather num2 is zero, if yes return num1"<<endl;
+	/* cout<<"called gcd"<<endl; */
+	/* cout<<"n1: "<<num1<<'\t'<<"n2: "<<num2<<endl; */
+	/* cout<<"check wheather num2 is zero, if yes return num1"<<endl; */
 	if(!num2){ return num1; cout<<"num2 is zero returned num1"<<endl;}
 	else{
-		cout<<"num2 isn't zero, recrursive call gcd(num2 as new num1,num1%num2 as new num1)"<<endl;
+		/* cout<<"num2 isn't zero, recrursive call gcd(num2 as new num1,num1%num2 as new num1)"<<endl; */
 	return gcd(num2,num1%num2);
 	}
 }
